@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="static/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="static/animate.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://use.fontawesome.com/ceb108a0b2.js"></script>
+</head>
+<body>
+
+<div class="grey-fon">
+	<div class="container-fluid">
+		<div class=" col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1">
+			<div class="menu-fon" id="1"> It is simple contextmenu, tab(menu)</div>
+			<div class="menu-fon" id="2"> It is simple contextmenu, tab(gallery)</div>
+			<div class="menu-fon" id="3"> It is simple contextmenu, tab(about)</div>
+			<div class="menu-fon" id="4"> It is simple contextmenu, tab(contact)</div>
+			<div class="white-block">
+				<div class="photo-block"><img class="my-img" src="bread_cr.jpg"></div>
+				<div class="nav col-lg-6 col-md-6 col-sm-12 col-lg-offset-6 col-md-offset-6">
+					<a href="#"><div class="menu-btn" id="menu"><p class="link-nav">Menu</p></div></a>
+					<a href="#"><div class="menu-btn" id="gallery"><p class="link-nav">Gallery</p></div></a>
+					<a href="#"><div class="menu-btn" id="about"><p class="link-nav">About</p></div></a>
+					<a href="#"><div class="menu-btn" id="contact"><p class="link-nav">Contact</p></div></a>
+				</div>
+				<div class="info-block col-lg-6 col-lg-offset-6">
+					<p class="main-titl">Baking</p>
+					<p class="main-text">This text is meaningless. It serves only as an example of what can be a beautiful font.</p>
+
+					<div class="big-btn"> VIEW OUR MENU <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+				</div>
+				<div class="footer-block col-lg-6 col-lg-offset-6">
+					<div class="col-lg-8 col-md-6 col-sm-7 data">For catering call +7900 000 0000</div>
+					<div class="col-lg-4 col-md-6 col-sm-5 data"><i class="fa fa-map-marker" aria-hidden="true"></i> Rostov-on-Don</div>
+				</div>
+			</div>
+		</div>d
+	</div>
+</div>
+<script src="static/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script type="text/javascript">
+	$('#menu').mouseover(showtab1).mouseout(ditab1);
+		function showtab1(){
+			$('#1').addClass('visible');
+		}
+		function ditab1(){
+			$('#1').removeClass('visible');
+		}
+	$('#gallery').mouseover(showtab2).mouseout(ditab2);
+		function showtab2(){
+			$('#2').addClass('visible');
+		}
+		function ditab2(){
+			$('#2').removeClass('visible');
+		}
+	$('#about').mouseover(showtab3).mouseout(ditab3);
+		function showtab3(){
+			$('#3').addClass('visible');
+		}
+		function ditab3(){
+			$('#3').removeClass('visible');
+		}
+	$('#contact').mouseover(showtab4).mouseout(ditab4);
+		function showtab4(){
+			$('#4').addClass('visible');
+		}
+		function ditab4(){
+			$('#4').removeClass('visible');
+		}
+</script>
+</body>
+</html>
