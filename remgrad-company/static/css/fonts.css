@@ -1,0 +1,33 @@
+@font-face{
+	src: url(fonts/Rubik-Bold.ttf);
+	font-family: Rubik-Bold;
+}
+.rubic{
+	font-family: Rubik-Bold;
+	text-decoration: none;
+}
+.rubic:hover{
+	text-decoration: none;
+}
+@font-face{
+	src: url(fonts/ComfortaaBold.ttf);
+	font-family: ComfortaaBold;
+}
+@font-face{
+	src:url(fonts/OpenSans-Regular.ttf);
+	font-family: OpenSans-Regular;
+}
+.open-s{
+	font-family: OpenSans-Regular;
+}
+.comfort{
+	font-family: ComfortaaBold;
+	font-size: 17px;
+}
+@font-face{
+	src:url(fonts/Peace-Sans.ttf);
+	font-family: Peace-Sans;
+}
+.peace{
+	font-family: Peace-Sans;
+}

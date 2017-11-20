@@ -1,0 +1,55 @@
+@font-face {
+	src: url(fonts/walls.otf);
+    font-family: Walls;
+}
+@font-face {
+	src: url(fonts/Highliner.otf);
+    font-family: Highliner;
+}
+@font-face {
+	src: url(fonts/OpenSans-Regular.ttf);
+    font-family: open-sans;
+}
+@font-face {
+	src: url(fonts/Akrobat-Light.otf);
+    font-family: akrobatl;
+}
+@font-face {
+	src: url(fonts/Rubik-Bold.ttf);
+    font-family: rubik;
+}
+.rubik{
+	font-family: rubik;
+}
+.walls{
+	font-family: Walls;
+	font-size: 81px;
+
+}
+.cart-title{
+	font-size: 17px;
+}
+.akrobatl{
+	font-family: akrobatl;
+}
+.closse-title-01{
+	position: relative;
+	top: 0px;
+	font-family:  Highliner;
+	font-size: 9em;
+	color: white;
+	text-shadow: 3px 3px 3px black;
+}
+.open-sans{
+	font-family: open-sans;
+}
+.price-title{
+	padding-top: 9px;
+	font-size: 21px;
+	text-align: center;
+	text-decoration: underline;
+	color: #8e8181;
+}
+.price-title:hover{
+	color: #2191a0;
+}

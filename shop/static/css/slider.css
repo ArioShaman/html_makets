@@ -1,0 +1,43 @@
+#slider{
+  width:110%;
+  border-radius: 15px;
+  background: #b2b9ba;
+  z-index: 1000;
+  height: 3px;
+}
+.slide-text{
+  font-size: 31px;
+  text-align: center;
+  border: 1px #c7cbcc solid;
+  height: 50px;
+  width: 70px;
+  margin: 50px auto;
+}
+
+.ui-slider-handle,.ui-slider-range,.ui-state-default{
+  width:34px;
+  height:34px;
+  position:absolute;
+  border-radius:50%;
+  background:#33b5c6;
+  margin-top: -15px;
+  z-index: 1000;
+}
+.ui-slider-range:focus, .ui-slider-handle:focus,.ui-slider-range:hover, .ui-slider-handle:hover{
+    width:40px;
+    height:40px;
+    background:rgb(33, 145, 160);
+    border:0px solid white;
+    margin-top:-18px;
+    z-index: 1000;
+}
+
+.cont-slider{
+  height: 50px;
+  width: 75%;
+  position: relative;
+  
+}
+.marg-slider{
+  margin-bottom: 40px;
+}

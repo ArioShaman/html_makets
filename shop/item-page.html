@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>item-page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="static/css/nav.css">
+	<link rel="stylesheet" type="text/css" href="static/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.1/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="static/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="static/css/cart-gallery.css">
+	<script src="https://use.fontawesome.com/ceb108a0b2.js"></script>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src='jquery.zoom.js'></script>
+</head>
+<body>
+
+	<div id="wrapper">
+        <div class="overlay"></div>
+    
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand"><a href="#">BrandShop</a></li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Мужчинам<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header"></li>
+                    <li><a href="catalog.html">Поло</a></li>
+                    <li><a href="catalog.html">Футболки</a></li>
+                    <li><a href="catalog.html">Пальто и куртки</a></li>
+                    <li><a href="catalog.html">Рубашки</a></li>
+                    <li><a href="catalog.html">Джемперы</a></li>
+                    <li><a href="catalog.html">Джинсы</a></li>
+                    <li><a href="catalog.html">Брюки</a></li>
+                    <li><a href="catalog.html">Носки и нижнее бельё</a></li>
+                    <li><a href="catalog.html">Спортивное</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Женщинам<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header"></li>
+                    <li><a href="catalog.html">Платья</a></li>
+                    <li><a href="catalog.html">Футболки</a></li>
+                    <li><a href="catalog.html">Рубашки</a></li>
+                    <li><a href="catalog.html">Джемперы</a></li>
+                    <li><a href="catalog.html">Блузки</a></li>
+                    <li><a href="catalog.html">Джинсы</a></li>
+                    <li><a href="catalog.html">Топы</a></li>
+                    <li><a href="catalog.html">Юбки</a></li>
+                    <li><a href="catalog.html">Пляжная одежда</a></li>
+                    <li><a href="catalog.html">Поло</a></li>
+                    <li><a href="catalog.html">Нижнее белье</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Другое<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header"></li>
+                    <li><a href="#">Часы</a></li>
+                    <li><a href="catalog.html">Украшения</a></li>
+                    <li><a href="catalog.html">Бижутерия</a></li>
+                    <li><a href="catalog.html">Сумки</a></li>
+                    <li><a href="catalog.html">Мобильные чехлы</a></li>
+                    <li><a href="catalog.html">Очки</a></li>
+                    <li><a href="catalog.html">Галстуки и платки</a></li>
+                    <li><a href="catalog.html">Кошельки и брелки</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+
+            <a href="cart.html">
+                <div class="cart-btn">
+                    <img src="static/images/icons/button-cart.png">
+                    <div class="cart-counter"><i class="fa fa-exclamation" aria-hidden="true"></i></div>
+                </div>
+            </a>
+            <div class="container flick-my-cont">
+
+                <div class="col-lg-2 col-lg-offset-0 col-md-2  col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 marg-slider">
+                    <section class="regular slider top-slide">
+                        <div class="zoom">
+                          <img class="miniature" src="static/images/items/min-01.jpg">
+                        </div>
+                        <div class="zoom">
+                          <img class="miniature" src="static/images/items/min-02.jpg">
+                        </div>
+                        <div class="zoom">
+                          <img class="miniature" src="static/images/items/min-03.jpg">
+                        </div>
+                      </section>
+
+                      <section class="regular-nav slider">
+                        <div class="slide-el">
+                          <img class="miniature-nav" src="static/images/items/min-01.jpg">
+                        </div>
+                        <div class="slide-el">
+                          <img class="miniature-nav" src="static/images/items/min-02.jpg">
+                        </div>
+                        <div class="slide-el">
+                          <img class="miniature-nav" src="static/images/items/min-03.jpg">
+                        </div>
+                      </section>
+                  </div>
+
+                  <div class="col-lg-7 col-md-7 col-sm-6 col-sm-offset-3 col-xs-12">
+                        <div class="info-cont">
+                            <div class="info-title col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div>
+                                    <p class="col-lg-6 col-md-8 col-sm-7 col-xs-7 col-lg-offset-1 title-padd">Поло из ткани пике</p>
+                                </div> 
+
+                                <div>
+                                    <p class="col-lg-3 col-md-3 col-sm-4 col-xs-4 col-lg-offset-2 price-padd">1899 <i class="fa fa-rub" aria-hidden="true"></i> </p>
+                                </div>
+                            </div>
+                            <div class="info-block ">
+                                <p class="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Это броское зауженное поло BrandShop из двойного хлопка пике высшего качества подчеркнет все достоинства вашей фигуры.</p>
+                                
+                                        <p class="tire">- зауженный силуэт</p>
+                                        <p class="tire">- контрастная подкладка на внутренней стороне воротника поло</p>
+                                        <p class="tire">- асимметричный низ с разрезами</p>
+                                <p>  Рост нашей модели — 1,86 м. На нем поло размера</p>
+                                
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-cont">
+                                <div class="col-lg-6 col-md-6 col-lg-offset-3 col-xs-11 col-sm-11 col-md-offset-3">
+                                    <div id="slider"></div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="size-text akrobatl col-lg-2 col-md-6 col-sm-3 col-xs-6 col-lg-offset-3">Size:</div>
+                                    <div class="slide-text col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <span id="1"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-cont form-bott">
+                                    
+                                        <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-4 col-xs-5">
+                                            <div class="count-text">Count:</div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-6 ">
+                                            <div class="input-group number-spinner">
+                                                <span class="input-group-btn data-dwn">
+                                                    <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                                </span>
+                                                <input type="text" class="form-control text-center" value="1" min="0" max="10">
+                                                <span class="input-group-btn data-up">
+                                                    <button class="btn btn-default btn-info" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-add-cont">
+                                <a href="cart.html">
+                                    <div class="add-cart-btn col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                                        ADD to CART<img class="cart-icon" src="static/images/icons/add-cart.png">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                  </div>
+            </div>
+
+            <div class="container marg-minus">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                    <div class="slick-tov-cont">
+                        <section class="regular-long slider">
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/01.jpg">
+                                <a href="#"><div class="price-slider in-price">1999 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/07.jpg">
+                                <a href="#"><div class="price-slider in-price">1999 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/06.jpg">
+                                <a href="#"><div class="price-slider in-price">2990 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/09.jpg">
+                                <a href="#"><div class="price-slider in-price">1490 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/05.jpg">
+                                <a href="#"><div class="price-slider in-price">3340 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/03.jpg">
+                                <a href="#"><div class="price-slider in-price">1700 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/02.jpg">
+                                <a href="#"><div class="price-slider in-price">2700 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/08.jpg">
+                                <a href="#"><div class="price-slider in-price">1600 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+                            <div class="slide-el-2">
+                                <img class="miniature-2" src="static/images/mini-items/04.jpg">
+                                <a href="#"><div class="price-slider in-price">3999 <i class="fa fa-rub" aria-hidden="true"></i></div></a>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soc-line-bl">
+                <div class="container">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <p class="soc-text">Мы в соцсетях:</p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-5 col-sm-offset-3 col-xs-8">
+                        <div class="soc"><i class="fa fa-2x fa-vk my-ic" aria-hidden="true"></i></div>
+                        <div class="soc"><i class="fa fa-2x fa-facebook my-ic-2" aria-hidden="true"></i></div>
+                        <div class="soc"><i class="fa fa-2x fa-twitter my-ic-2" aria-hidden="true"></i></div>
+                        <div class="soc"><i class="fa fa-2x fa-instagram my-ic-2" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="container">
+                    <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-4 col-xs-4 white-bl">
+                        <p class="akrobatl foot-font-t">Мужчинам</p>
+                        <a href="catalog.html"><p class="foot-li">Поло</p></a>
+                        <a href="catalog.html"><p class="foot-li">Футболки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Пальто и куртки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Рубашки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Джемперы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Джинсы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Брюки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Носки и нижнее бельё</p></a>
+                        <a href="catalog.html"><p class="foot-li">Спортивное</p></a>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4 col-xs-4 white-bl">
+                        <p class="akrobatl foot-font-t">Женщинам</p>
+                        <a href="catalog.html"><p class="foot-li">Платья</p></a>
+                        <a href="catalog.html"><p class="foot-li">Футболки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Рубашки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Джемперы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Блузки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Джинсы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Топы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Юбки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Пляжная одежда</p></a>
+                        <a href="catalog.html"><p class="foot-li">Поло</p></a>
+                        <a href="catalog.html"><p class="foot-li">Нижнее белье</p></a>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4 col-xs-4 white-bl">
+                        <p class="akrobatl foot-font-t">Другое</p>
+                        <a href="catalog.html"><p class="foot-li">Часы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Украшения</p></a>
+                        <a href="catalog.html"><p class="foot-li">Бижутерия</p></a>
+                        <a href="catalog.html"><p class="foot-li">Сумки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Мобильные чехлы</p></a>
+                        <a href="catalog.html"><p class="foot-li">Очки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Галстуки и платки</p></a>
+                        <a href="catalog.html"><p class="foot-li">Кошельки и брелки</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(document).ready(function () {
+          var trigger = $('.hamburger'),
+              overlay = $('.overlay'),
+             isClosed = false;
+
+            trigger.click(function () {
+              hamburger_cross();      
+            });
+
+            function hamburger_cross() {
+
+              if (isClosed == true) {          
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+              } else {   
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+              }
+          }
+          
+          $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+          });
+
+          $('.regular').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              fade: true,
+              dots: false,
+              asNavFor: '.regular-nav'
+            });
+            $('.regular-nav').slick({
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              asNavFor: '.regular',
+              dots: false,
+              arrows:false,
+              centerMode: true,
+              focusOnSelect: true
+            }); 
+            
+            $('.regular-long').slick({
+              dots: true,
+              speed: 300,
+              dots:false,
+              arrows:false,
+              slidesToShow: 7,
+              slidesToScroll: 2,
+              autoplay:true,
+              autoplaySpeed: 2000,
+              pauseOnHover:true,
+              responsive: [
+                {
+                  breakpoint: 1224,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2,
+                  }
+                },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 900,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+            });
+                        $( "div #slider" ).slider({
+                value : 3,
+                min : 1,
+                max : 5,
+                step : 1,
+                create: function( event, ui ) {
+                    val = $( ".cont-slider > #slider" ).slider("value");
+                    $('div > span#1').html('M');
+                },
+            slide: function( event, ui ) {
+              if(ui.value == 1){
+                  $('div > span#1').html('XS');
+              } 
+              if(ui.value == 2){
+                  $('div > span#1').html('S');
+              } 
+              if(ui.value == 3){
+                  $('div > span#1').html('M');
+              } 
+              if(ui.value == 4){
+                  $('div > span#1').html('L');
+              } 
+              if(ui.value == 5){
+                  $('div > span#1').html('XL');
+              } 
+            }
+        });
+
+        var action;
+        $(".number-spinner button").mousedown(function () {
+            btn = $(this);
+            input = btn.closest('.number-spinner').find('input');
+            btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+            if (btn.attr('data-dir') == 'up') {
+                action = setInterval(function(){
+                    if ( input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max')) ) {
+                        input.val(parseInt(input.val())+1);
+                    }else{
+                        btn.prop("disabled", true);
+                        clearInterval(action);
+                    }
+                }, 50);
+            } else {
+                action = setInterval(function(){
+                    if ( input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min')) ) {
+                        input.val(parseInt(input.val())-1);
+                    }else{
+                        btn.prop("disabled", true);
+                        clearInterval(action);
+                    }
+                }, 50);
+            }
+        }).mouseup(function(){
+            clearInterval(action);
+    });
+
+});
+    </script>
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src='jquery.zoom.js'></script>
+    <script type="text/javascript">
+        jQuery.noConflict()(function($){
+            $(document).ready(function(){
+                $('.zoom').zoom();
+                $('dropdown-toggle').dropdown();
+            });
+        });
+    </script>
+</body>
+</html>

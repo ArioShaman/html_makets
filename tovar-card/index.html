@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="phone">
+	<div class="container-fluid">
+		<div class="col-lg-8 col-md-10 col-md-offset-1 col-lg-offset-2 col-sm-10 col-sm-offset-1 white-block">
+			<div class="photo-c col-lg-7 col-md-6 col-sm-12 hidden-sm">
+				<img class="img" src="food-2.jpg">
+			</div>
+
+			<div class="photo-c hidden-lg hidden-md visible-sm">
+				<img class="img" src="food-2.jpg">
+			</div>
+
+			<div class="col-lg-5 col-md-6 col-sm-12 info-block">
+				<div class="col-lg-12 col-md-12 col-sm-12 top-bl">
+					<div class="col-lg-10 col-md-10 col-sm-10 m-dish-tit">Lanch</div>
+					<div class="col-lg-2 col-md-2 col-sm-2">
+						<div class="small-price">12 &euro;</div>
+					</div>
+				</div>
+
+
+				<div class="title-block col-lg-12 col-md-12 col-sm-12">
+					Awesome pilaf with seafood and vegetables
+				</div>
+
+
+				<div class="col-lg-12 col-md-12 col-sm-12 prop-bl">
+					<div class="col-lg-4 col-md-4 col-sm-5">300 g.</div>
+					<div class="col-lg-6 col-md-6 cal col-sm-6">530 calories</div>
+				</div>
+
+				<div class="col-lg-12 col-md-12 info-text">
+					If you try this pilaf, then there will be no turning back. Excellent combination of price and quality.
+				</div>
+
+				<div class="col-lg-12 col-md-12 col-sm-12 quantity">
+					<div class="col-lg-6 col-md-6 col-sm-6">Quantity:</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="input-group number-spinner">
+							<span class="input-group-btn data-dwner lefter">
+								<button class="btne  " data-dir="dwn"><span>-</span></button>
+							</span>
+							<input type="text" class="my-form text-center" value="1" min="1" max="10">
+
+							<span class="input-group-btn righter">
+								<button class="btne" data-dir="up"><span>+</span></button>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 col-sm-12 quantity">
+					<div class="col-lg-6 col-md-6 col-sm-7">Delivery-time:</div>
+					<div class="col-lg-5 col-md-6 col-sm-5">40 min</div>
+				</div>
+
+				<div class="col-lg-8 col-md-10 col-md-offset-1 col-lg-offset-2 col-sm-10 col-sm-offset-1">
+					<a href="#"><div class="order-btn">Order Now</div></a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	$(function() {
+    var action;
+
+    $(".number-spinner button").mousedown(function () {
+        btn = $(this);
+        input = btn.closest('.number-spinner').find('input');
+        btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+    	if (btn.attr('data-dir') == 'up') {
+            action = setInterval(function(){
+                if ( input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max')) ) {
+                    input.val(parseInt(input.val())+1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	} else {
+            action = setInterval(function(){
+                if ( input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min')) ) {
+                    input.val(parseInt(input.val())-1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	}
+    }).mouseup(function(){
+        clearInterval(action);
+    });
+
+    $(".number-spinner button").bind('touchstart', function(){
+        btn = $(this);
+        input = btn.closest('.number-spinner').find('input');
+        btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+    	if (btn.attr('data-dir') == 'up') {
+            action = setInterval(function(){
+                if ( input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max')) ) {
+                    input.val(parseInt(input.val())+1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	} else {
+            action = setInterval(function(){
+                if ( input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min')) ) {
+                    input.val(parseInt(input.val())-1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+    	}
+    }).bind('touchend', function(){
+        clearInterval(action);
+    });
+});
+</script>
+</body>
+</html>

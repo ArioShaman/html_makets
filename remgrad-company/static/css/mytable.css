@@ -1,0 +1,286 @@
+.tree-block{
+	min-height: 2000px;
+	width: 280px;
+	background-color: white;
+	margin-left: 78%;
+	position: relative;
+	margin-top: 30px;
+	position: fixed;
+}
+.mail-link{
+	width: 100%;
+	min-height: 40px;
+	background-color: orange;
+	position: relative;
+	z-index: 100;
+	float: top;
+	border-bottom: 2px grey solid;
+}
+.my-li{
+	position: absolute;
+	min-height: 50px;
+	width: 250px;
+	padding-top: 15px;
+	text-align: center;
+	color: white;
+	font-family: Rubik-Bold;
+	text-transform: uppercase;
+}
+.block-li{
+	position: relative;
+	height: 0px;
+	margin-left: 10%;
+	width: 89%;
+	background-color: #C7AEAE;
+	border-left: 2px solid grey;
+	transition: height 0.5s;
+}
+.block-li-2{
+	position: relative;
+	height: 0px;
+	margin-left: 10%;
+	width: 89%;
+	background-color: #C7AEAE;
+	border-left: 2px solid grey;
+	transition: height 0.5s;
+}
+.in-link,.in-link-2,.in-link-3,.in-link-4,.in-link-5{
+	width: 100%;
+	height: 0px;
+	display: none;
+	opacity: 0;
+	background-color: #F0E5E5;
+	position: relative;
+	top: 50px;
+	transition: height 0.5s;
+}
+.mail-link:hover .block-li{
+	min-height: 50px;
+	transition: height 0.5s;
+}
+.mail-link:hover .block-li-2{
+	min-height: 68px;
+	transition: height 0.5s;
+}
+.block-li:hover{
+	border-left: 2px orange solid;
+}
+.mail-link:hover .in-link{
+	height: 400px;
+	transition: height 0.5s;
+	display: block;
+	opacity: 1;
+}
+
+.mail-link:hover .in-link-2{
+	height: 360px;
+	transition: height 0.5s;
+	display: block;
+	opacity: 1;
+}
+.mail-link:hover .in-link-3{
+	height: 210px;
+	transition: height 0.5s;
+	display: block;
+	opacity: 1;
+}
+.mail-link:hover .in-link-4{
+	height: 230px;
+	transition: height 0.5s;
+	display: block;
+	opacity: 1;
+}
+.mail-link:hover .in-link-5{
+	height: 230px;
+	transition: height 0.5s;
+	display: block;
+	opacity: 1;
+}
+
+
+
+
+
+.tab-width {
+	top: 160px;
+	position: absolute;
+    float: left;
+    margin-left: 60px;
+    width: 70%;
+}
+.tab-main-name{
+
+}
+.block-li > a{
+	color: white;
+	text-decoration: none;
+	font-family: Rubik-Bold;
+	text-transform: uppercase;
+	
+
+}
+.block-li:hover a{
+	text-decoration: none;
+	color: orange;
+}
+
+.block-li-2 > a{
+	color: white;
+	text-decoration: none;
+	font-family: Rubik-Bold;
+	text-transform: uppercase;	
+}
+.my-li > a{
+	color: white;
+	text-decoration: none;
+	font-family: Rubik-Bold;
+	text-transform: uppercase;	
+}
+
+.my-li:hover a{
+	text-decoration: none;
+	color: red;
+}
+
+.block-li-2:hover a{
+	text-decoration: none;
+	color: orange;
+}
+
+
+.tab-bold{
+	font-weight: bold;
+}
+
+
+.link-wi{
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+.price-block{
+	height: 120px;
+	width: 100%;
+	background-color: orange;
+	position: relative;
+}
+.price-text{
+	position: relative;
+	text-align: center;
+	font-size: 46px;
+	top: 52px;
+	color: white;
+}
+
+
+.marg-port{
+	margin-top: 50px;
+}
+.marg-port-2{
+	top: 50px;
+}
+.marg-port >img:hover{
+	opacity: 0.3;
+}
+.marg-port >a:hover img{
+	opacity: 0.2;
+}
+img>a{
+	text-decoration: none;
+	text-align: center;
+}
+
+.port-but{
+	height: 50px;
+	width: 250px;
+	border:4px white solid;
+	position: absolute;
+	z-index: 100;
+	bottom: 45%;
+	left: 25%;
+	opacity: 0;
+	display: none;
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 21px;
+}
+.port-but-main{
+	height: 70px;
+	width: 300px;
+	border:4px white solid;
+	position: absolute;
+	z-index: 100;
+	bottom: 45%;
+	left: 30%;
+	opacity: 0;
+	display: none;
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 31px;
+}
+.port-but:hover{
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 6px;
+}
+.port-but-main:hover{
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 6px;
+}
+.port-but-ind{
+	height: 50px;
+	width: 200px;
+	border:4px white solid;
+	position: absolute;
+	z-index: 100;
+	bottom: 43%;
+	left: 100px;
+	opacity: 0;
+	display: none;
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 21px;
+}
+.port-but-ind:hover, .port-but-len:hover{
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 6px;
+}
+
+.port-but-len{
+	height: 80px;
+	width: 250px;
+	border:4px white solid;
+	position: absolute;
+	z-index: 100;
+	bottom: 34%;
+	left: 75px;
+	opacity: 0;
+	display: none;
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 21px;
+}
+.marg-port:hover a{
+	opacity: 1;
+	display: block;
+}
+
